@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+  background-color: rgb(237, 192, 109);
+  /*position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  z-index: 1000;
+  
+  /* Syntax: x-offset | y-offset | blur | spread | color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item a{
+    color: white;
+    font-size:18px;
+    font-weight: 600;
+}
+
+.nav-item .nav-link.active {
+    color: maroon;
+}
+
+.nav-item .nav-link:hover {
+    color: maroon; 
+}
+
+.active.active{
+  color: maroon;
+  text-decoration: underline;
+}
+@media screen and (min-width: 760px){
+  nav{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.b-sellers{
+ margin: 5%;
+}
+.b-holder{
+  display: flex;
+  gap: 20px;
+}
+.card{
+  width: 100%;
+  height: auto;
+}
+.card img{
+  object-fit: cover;
+  height:auto;
+  width: 100%;
+}
+footer .logo{
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
