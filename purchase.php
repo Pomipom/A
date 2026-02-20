@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $client_contact = $_POST['client_contact'] ?? 'Unknown';
 
     // GET PRODUCT DATA FROM DATABASE
-    $sql = "SELECT Price, Stocks FROM product WHERE Prod_ID = '$product_id'";
+    $sql = "SELECT Prod_name, Prod_img, Price, Stocks FROM product WHERE Prod_ID = '$product_id'";
     $result = mysqli_query($conn, $sql);
     $product = mysqli_fetch_assoc($result);
 
@@ -50,4 +50,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     window.location.href = 'products.php';
     </script>";
 }
+
 ?>
